@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Calculator</title>
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="ASSETS/CSS/style.css">
+</head>
+
+<body id="body">
+  <main>
+    <div id="calculator">
+      <input type="text" id="output" readonly>
+      <!-- Row 1 -->
+      <button class="btn" onclick="clearOutput();">AC</button>
+      <button class="btn" onclick="getOpr('%');">%</button>
+      <button class="btn" onclick="deleteThisOpr();">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+      <button class="btn" onclick="getOpr('.');"><b>.</b></button>
+      <!-- Row 2 -->
+      <button class="btn" onclick="getNum(7);">7</button>
+      <button class="btn" onclick="getNum(8);">8</button>
+      <button class="btn" onclick="getNum(9);">9</button>
+      <button class="btn" onclick="getOpr('/');">&divide;</button>
+      <!-- Row 3 -->
+      <button class="btn" onclick="getNum(4);">4</button>
+      <button class="btn" onclick="getNum(5);">5</button>
+      <button class="btn" onclick="getNum(6);">6</button>
+      <button class="btn" onclick="getOpr('*');">&times;</button>
+      <!-- Row 4 -->
+      <button class="btn" onclick="getNum(1);">1</button>
+      <button class="btn" onclick="getNum(2);">2</button>
+      <button class="btn" onclick="getNum(3);">3</button>
+      <button class="btn" onclick="getOpr('-');">-</button>
+      <!-- Row 5 -->
+      <button class="btn double" onclick="getNum(0)">0</button>
+      <button class="btn" onclick="getOpr('+');">+</button>
+      <button class="btn" onclick="calculate();">=</button>
+    </div>
+  </main>
+</body>
+<script src="ASSETS/js/script.js"></script>
+
+</html>
